@@ -246,5 +246,5 @@ scores = scores[np.where(scores >= 0)]
 #plt.hist(np.ceil(scores),bins=50)
 print images.shape
 print scores.shape
-np.save("x_train.npy",images)
-np.save("y_train.npy",scores)
+np.save("x_train.npy",images.astype(np.float32))
+np.save("y_train.npy",scores.astype(np.float32))
